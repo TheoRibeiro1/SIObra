@@ -1,0 +1,17 @@
+{% extends "siobra/header.html" %}
+{% block content %}
+<form name="formulario" method="post">
+<!--<input type=hidden name="destino" value="EmailQueVaiReceberAsMensagens">
+<input type=hidden name="enviado" value="http://www.seudominio.xxx.yy/enviado.htm">-->
+<p><b>Nome:</b><br>
+<input type=text name="nome" size="45"></p><br>
+<p><b>Email:</b><br>
+<input type=text name="email" size="45"></p><br>
+<p><b>Assunto:</b><br>
+<input type=text name="assunto" size="45"></p><br>
+<p><b>Mensagem:</b><br>
+<textarea name="Mensagem" rows="10" cols="60" wrap="virtual"></textarea></p><br>
+<p><input type="submit" value="Enviar Email"> <input type="reset" value="Limpar Formulário"></p>
+</form>
+<!--{% include "siobra/includes/htmlsnippert2.html" %}!-->
+{% endblock %}
